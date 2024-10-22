@@ -1,0 +1,192 @@
+section.Profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 10rem;
+}
+section.Profile h2{
+    font-size: 2rem;
+    background: linear-gradient(to right, #f727ca, #7103cb);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+section.Profile .info{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.3rem 0.1rem lightskyblue;
+}
+section.Profile .info ul{
+    width: 100%;
+    list-style-type: none;
+}
+section.Profile .info ul li{
+    width: 100%;
+}
+section.Profile .info ul li a{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+}
+section.Profile .info ul li a:hover{
+    background-color: rgb(181, 196, 212);
+}
+section.profileImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+section.profileImage h2{
+    background: linear-gradient(to right, #f727ca, #7103cb);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    text-align: center;
+}
+section.profileImage form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+section.profileImage .imageCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section.profileImage .imageCont label{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+section.profileImage .imageCont input{
+    width: 100%;
+    border: 0.1rem solid lightgray;
+    padding: 1rem;
+}
+section.profileImage .imageCont input.errorHappened{
+    border: 0.1rem solid red ;
+}
+section.profileImage button{
+    background-color: rgb(65, 182, 255);
+    border: none;
+    outline: 0;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+section.passwordChange{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+section.passwordChange .loading{
+    position: relative;
+    top: 1rem;
+    left: 17rem;
+}
+section.passwordChange form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40rem;
+    box-shadow: 0 0 0.5rem 0.2rem lightskyblue;
+    padding: 2rem;
+    row-gap: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+section.passwordChange form h2{
+    font-size: 2rem;
+}
+section.passwordChange form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 0.3rem;
+
+}
+section.passwordChange form label{
+    font-size: 1.5rem;
+}
+section.passwordChange form input{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 0.1rem solid lightgray;
+    outline: 0;
+}
+section.passwordChange form input.errorHappened{
+    border: 0.1rem solid red;
+}
+section.passwordChange form button{
+    padding: 1rem 2rem;
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+section.passwordChange form button.disabled{
+    background-color: darkgray;
+    cursor: auto;
+}
+section.profileImage button.disabled{
+    background-color: darkgray;
+    cursor: auto;
+}
+section.profileImage form .loading{
+    position: relative;
+    bottom: 1rem;
+    left: 2rem;
+}
+@media screen and (max-width: 900px){
+    section.Profile .info{
+        width: 70%;
+    }
+}
+@media screen and (max-width:700px){
+    section.profileImage form{
+        width: 100%;
+    }
+    section.Profile .info{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px){
+    section.Profile .info{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px){
+    section.passwordChange form{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (max-width: 400px){
+    section.profileImage form{
+        padding: 2rem 0.5rem;
+    }
+}

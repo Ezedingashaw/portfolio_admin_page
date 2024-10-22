@@ -1,0 +1,89 @@
+section.viewProject{
+    width: 80vw;
+    padding: 1rem 2rem 5rem ;
+}
+section.viewProject .container .imagesCont{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    width: 100%;
+}
+section.viewProject .container .imagesCont div{
+    width: 20rem;
+   height: 10rem;
+   cursor: pointer;
+}
+section.viewProject .container .imagesCont img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+section.viewProject .container .imagesCont .imageLarge{
+   grid-column: 2/5;
+   grid-row: 1/5;
+}
+section.viewProject .container .imagesCont .imageLarge{
+   width: 50rem;
+   height: 43rem;
+   cursor: default;
+}
+section.viewProject .container .imagesCont .imageLarge img{
+   width: 100%;
+   height: 100%;
+}
+section.viewProject .container .discription{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+section.viewProject .container .discription h2{
+    font-size: 2rem;
+    background: linear-gradient(to right, #d115a8, #6300b3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section.viewProject .container .discription h3{
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+section.viewProject .container .discription p{
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+section.viewProject .container .discription a{
+    color: blue;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    display: inline-block;
+}
+@media screen and (max-width: 980px){
+    section.viewProject{
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 800px){
+    section.viewProject .container .imagesCont .imageLarge{
+        grid-column: 1/5;
+        grid-row: 1/5;
+     }
+     section.viewProject .container .imagesCont div{
+        width: 100%;
+       height: 10rem;
+    }
+    section.viewProject .container .imagesCont .imageLarge{
+        width: 100%;
+        height: 43rem;
+        cursor: default;
+     }
+     section.viewProject .container .imagesCont{
+        grid-template-columns: repeat(4, 1fr);
+     }
+     section.viewProject{
+        padding: 0;
+        width: 100%;
+     }
+}

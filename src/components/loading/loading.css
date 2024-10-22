@@ -1,0 +1,28 @@
+div.loading{
+    display: flex;
+    column-gap: 1rem;
+}
+div.loading div{
+    width: 1rem;
+    height: 1rem;
+    background-color: lightgray;
+    border-radius: 50%;
+    animation: loading 2s  infinite;
+}
+div.loading .boxOne{
+    animation-delay: -1.33s;
+}
+div.loading .boxTwo{
+    animation-delay: -0.66s;
+}
+div.loading .boxThree{
+    animation-delay: 0s;
+}
+
+@keyframes loading{
+from{
+    background-color: rgb(138, 138, 138);
+}to{
+    background-color: lightgray;
+}
+}

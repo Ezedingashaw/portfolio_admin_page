@@ -1,0 +1,28 @@
+.adminBar{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: black;
+}
+.adminBar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+}
+.adminBar ul li span{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #f727ca, #7103cb);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+  font-optical-sizing: auto;
+}
+.adminBar ul li img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: fill;
+    border-radius: 50%;
+}

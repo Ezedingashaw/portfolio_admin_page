@@ -1,0 +1,78 @@
+section.dashboard{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 5rem;
+}
+section .welcomeSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+section .welcomeSection h2{
+    font-size: 4rem;
+    background: linear-gradient(to right, #f727ca, #7103cb);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+section .welcomeSection img{
+   width: 20rem;
+   height: 20rem;
+   object-fit: cover;
+   border-radius: 50%;
+}
+section.dashboard .links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+section.dashboard .links div{
+    box-shadow: 0 0 0.4rem 0.2rem lightskyblue;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+section.dashboard .links h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+section.dashboard .links span{
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+}
+section.dashboard .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    background-color: black;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+}
+@media screen and (max-width: 800px){
+    section.dashboard .links{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 550px){
+    section.dashboard .links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 350px){
+    section.dashboard .links{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
