@@ -36,7 +36,7 @@ class LoginPage extends Component {
                     sessionStorage.setItem('token', token);
                     window.location = '/';
                 } else {
-                    console.log('Invalid token');
+                    console.log('Invalid token!');
                 }
             } catch (err) {
                 console.log(err);
