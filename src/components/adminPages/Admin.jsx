@@ -21,16 +21,16 @@ const Admin = () => {
             <div className="routesContainer">
                 <Routes>
                     <Route path="https://myportfolioadminpage.onrender.com/" element={<Dashboard /> } />
-                    <Route path="/projects" element={<Projects /> } />
-                    <Route path="/projects/addProject" element={<NewProject /> } />
-                    <Route path="/profile" element={<Profile /> } />
-                    <Route path="/profile/profilePicture" element={<ProfileImage /> } />
-                    <Route path="/profile/changePassword" element={<Password /> } />
-                    <Route path="/projects/updateProject/:id" element={<UpdateWrapper /> } />
-                    <Route path="/projects/viewProject/:id" element={<ViewProject /> } />
-                    <Route path="/skills" element={<Skills /> } />
-                    <Route path="/skills/newSkill" element={<NewSkill /> } />
-                    <Route path="/skills/updateSkill/:id" element={<UpdateSkillWrapper /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/projects" element={<Projects /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/projects/addProject" element={<NewProject /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/profile" element={<Profile /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/profile/profilePicture" element={<ProfileImage /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/profile/changePassword" element={<Password /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/projects/updateProject/:id" element={<UpdateWrapper /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/projects/viewProject/:id" element={<ViewProject /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/skills" element={<Skills /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/skills/newSkill" element={<NewSkill /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/skills/updateSkill/:id" element={<UpdateSkillWrapper /> } />
                 </Routes>
             </div>
         </section>
