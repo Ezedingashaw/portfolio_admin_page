@@ -20,7 +20,7 @@ const Admin = () => {
             <NavBar />
             <div className="routesContainer">
                 <Routes>
-                    <Route path="/" element={<Dashboard /> } />
+                    <Route path="https://myportfolioadminpage.onrender.com/" element={<Dashboard /> } />
                     <Route path="/projects" element={<Projects /> } />
                     <Route path="/projects/addProject" element={<NewProject /> } />
                     <Route path="/profile" element={<Profile /> } />
