@@ -18,6 +18,7 @@ const Skills = () => {
             try {
                 const { data } = await axios.get(`${process.env.REACT_APP_API}/skills`);
                 setSkills(data);
+                console.log("skill",data);
             }catch (err) {
                 console.log(err);
             }finally{
