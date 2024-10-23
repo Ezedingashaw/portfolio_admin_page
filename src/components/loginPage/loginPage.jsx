@@ -22,7 +22,6 @@ class LoginPage extends Component {
         this.setState({ errors: errors || {} });
 
         if (!errors) {
-            console.log("URL",process.env.REACT_APP_API);
             this.setState({ isLoading: true });
             const formData = new FormData();
             Object.keys(this.state.data).forEach(key => {
@@ -33,7 +32,7 @@ class LoginPage extends Component {
                 const response = await axios.post(`${process.env.REACT_APP_API}/login`, formData);
                 const token = response.headers['x-reg-token']
                 sessionStorage.setItem('token', token);
-                window.location = '/';
+                window.location = '/projects';
             } catch (err) {
                 console.log(err);
             } finally {
