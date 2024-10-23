@@ -22,6 +22,7 @@ class LoginPage extends Component {
         this.setState({ errors: errors || {} });
 
         if (!errors) {
+            console.log("URL",process.env.REACT_APP_API_URL);
             this.setState({ isLoading: true });
             const formData = new FormData();
             Object.keys(this.state.data).forEach(key => {
