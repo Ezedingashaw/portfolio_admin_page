@@ -31,8 +31,12 @@ class LoginPage extends Component {
             try {
                 const response = await axios.post(`${process.env.REACT_APP_API}/login`, formData);
                 const token = response.headers['x-reg-token']
-                sessionStorage.setItem('token', token);
-                window.location = '/';
+                if (token) {
+                    sessionStorage.setItem('token', token);
+                    window.location = '/';
+                } else {
+                    console.log('Invalid token');
+                }
             } catch (err) {
                 console.log(err);
             } finally {
