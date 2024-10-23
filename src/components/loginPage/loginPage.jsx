@@ -32,7 +32,7 @@ class LoginPage extends Component {
                 const response = await axios.post(`${process.env.REACT_APP_API}/login`, formData);
                 const token = response.headers['x-reg-token']
                 sessionStorage.setItem('token', token);
-                window.location = 'https://myportfolioadminpage.onrender.com/';
+                window.location = '/';
             } catch (err) {
                 console.log(err);
             } finally {
