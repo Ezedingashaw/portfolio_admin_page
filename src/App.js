@@ -21,13 +21,12 @@ function App() {
 
   return (
     <div className="appContainer">
-      {user ?
       (<Fragment>
         <AdminBar />
         <Routes>
           <Route path='/*' element={ <Admin />} />
         </Routes>
-      </Fragment>):(<LoginPage/>)}
+      </Fragment>)
     </div>
   );
 }
