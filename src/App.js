@@ -24,7 +24,7 @@ function App() {
       (<Fragment>
         <AdminBar />
         <Routes>
-          <Route path='https://admin-page-k9sp.onrender.com/*' element={ <Admin />} />
+          <Route path='/*' element={ <Admin />} />
         </Routes>
       </Fragment>)
     </div>
