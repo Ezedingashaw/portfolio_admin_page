@@ -9,13 +9,14 @@ const AdminBar = () => {
 
     useEffect(() => {
         const user = jwtDecode(sessionStorage.getItem('token'));
+        if(!user) setUser({});
         setUser(user);
     },[])
     return ( 
         <nav className="adminBar">
             <ul>
                 <li><span>Admin</span></li>
-                <li><img src={user.profile} alt="" /></li>
+                <li><img src={adminImage} alt="" /></li>
             </ul>
         </nav>
      );
