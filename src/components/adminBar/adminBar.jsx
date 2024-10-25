@@ -7,11 +7,11 @@ const AdminBar = () => {
 
     const [user, setUser] = useState({});
 
-    useEffect(() => {
-        const user = jwtDecode(sessionStorage.getItem('token'));
-        if(!user) setUser({});
-        setUser(user);
-    },[])
+    // useEffect(() => {
+    //     const user = jwtDecode(sessionStorage.getItem('token'));
+    //     if(!user) setUser({});
+    //     setUser(user);
+    // },[])
     return ( 
         <nav className="adminBar">
             <ul>
